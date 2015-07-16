@@ -2,7 +2,7 @@
   "name": "aurelia-material",
   "version": "0.0.1",
   "description": "Aurelia wrapper for Material Design Lite",
-  "main": "dist/index.js",
+  "main": "index.js",
   "keywords": [
     "aurelia",
     "material design lite"
