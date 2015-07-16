@@ -23,7 +23,7 @@ var MDL = (function () {
         key: 'attached',
         value: function attached() {
             this.button = $(this.element).find('.my-button');
-            console.log('mdl button  attached');
+            console.log('new mdl button  attached');
             console.log(this.button);
             var button = document.createElement('button');
             var textNode = document.createTextNode('Click Me!');
