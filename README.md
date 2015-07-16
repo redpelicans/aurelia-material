@@ -18,7 +18,7 @@ Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
   ...
 ```
   
-3. Create (if you haven't already) a file `main.js` in your `src` folder with following content:
+3. Update  `main.js` in your `src` folder with following content:
 
   ```javascript
   export function configure(aurelia) {
