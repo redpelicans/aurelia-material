@@ -31,8 +31,7 @@
   },
   "homepage": "https://github.com/redpelicans/aurelia-material#readme",
   "jspm": {
-    "main": "dist/index.js",
-    "directories": {},
+    "directories": {"lib": "dist"},
     "dependencies": {
       "google/material-design-lite": "github:google/material-design-lite@^1.0.0"
     },
