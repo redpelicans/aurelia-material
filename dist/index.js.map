@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;QAAgB,SAAS,GAAT,SAAS;;AAAlB,SAAS,SAAS,CAAC,OAAO,EAAC;AAChC,SAAO,CAAC,kBAAkB,CAAC,UAAU,CAAC,CAAC;CACxC","file":"index.js","sourcesContent":["export function configure(aurelia){\n  aurelia.globalizeResources('./button');\n}\n\n\n"],"sourceRoot":"/home/redpelicans/aurelia-material/src"}

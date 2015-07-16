@@ -2,7 +2,7 @@
   "name": "aurelia-material",
   "version": "0.0.1",
   "description": "Aurelia wrapper for Material Design Lite",
-  "main": "",
+  "main": "dist/index.js",
   "keywords": [
     "aurelia",
     "material design lite"
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/redpelicans/aurelia-material#readme",
   "jspm": {
+    "main": "index",
     "directories": {},
     "dependencies": {
       "google/material-design-lite": "github:google/material-design-lite@^1.0.0"
