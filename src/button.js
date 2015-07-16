@@ -11,7 +11,7 @@ export class MDL {
 
     attached() {
       this.button = $(this.element).find('.my-button');
-      console.log("mdl button  attached");
+      console.log("new mdl button  attached");
       console.log(this.button);
       let button = document.createElement('button');
       let textNode = document.createTextNode('Click Me!');
