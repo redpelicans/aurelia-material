@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/redpelicans/aurelia-material.git"
   },
-  "author": "eric.basley@redpelicans.com",
+  "contributors": ["eric.basley@redpelicans.com", "nicolas.briemant@redpelicans.com"],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/redpelicans/aurelia-material/issues"
