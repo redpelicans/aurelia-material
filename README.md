@@ -30,6 +30,7 @@ Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
 
     aurelia.start().then(a => a.setRoot());
   }
+   ```
   
   4. include material design css in your `index.html`
   
