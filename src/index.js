@@ -1,5 +1,5 @@
 export function configure(aurelia){
-  aurelia.globalizeResources('./button');
+  aurelia.globalizeResources('./mdl');
 }
 
 
