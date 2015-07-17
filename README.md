@@ -11,7 +11,7 @@ Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
   $ jspm install github:redpelicans/aurelia-material
 ```
 
-2. Make sure you use [manual bootstrapping](http://aurelia.io/docs#startup-and-configuration). In order to do so open your `index.html` and locate the element with the attribute aurelia-app. Change it to look like this:
+2. Make sure you use [manual bootstrapping](http://aurelia.io/docs#startup-and-configuration). In order to do so open your `index.html` and locate the element with the attribute aurelia-app:
 
   ```html
   <body aurelia-app="main">
@@ -32,10 +32,17 @@ Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
   }
    ```
   
-  4. include material design css in your `index.html`
+4. Include material design css in your `index.html`
   
   
   ```html
       <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
 ```
+5. Use wrapped MDL components in your hml views:
+
+```html
+  <mdl-button/>
+```
+
+See online [Demo]() // Not yet available ...
   
