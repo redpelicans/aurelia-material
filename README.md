@@ -44,5 +44,5 @@ Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
   <mdl-button/>
 ```
 
-See online [Demo]() // Not yet available ...
+See online [Demo](http://redpelicans.github.io/aurelia-material-sample/)
   
