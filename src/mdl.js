@@ -6,7 +6,7 @@ let mdlTypes = {
     button: {
         html: ["mdl-button", "mdl-js-button"]
       , js: ['MaterialButton']
-      , fct: manageRipple
+      , fct: [manageRipple]
 
     }
   , textfield: {
@@ -20,41 +20,52 @@ let mdlTypes = {
   , menu: {
        js: ['MaterialMenu']
      , html: ["mdl-menu", "mdl-js-menu"]
-     , fct: function(element){
-        manageRipple(element);
-        let elts = $(element).find("li.mdl-js-ripple-effect").get();
-        for(let elt of elts) componentHandler.upgradeElement(elt, "MaterialRipple");
-     }
+     , fct: [manageRipple]
 
   }
-  , checkbox: {
+  , slider: {
+       js: ['MaterialSlider']
+     , html: ["mdl-slider", "mdl-js-slider"]
+  }
+  , "switch": {
+       js: ['MaterialSwitch']
+     , html: ["mdl-switch", "mdl-js-switch"]
+     , fct: [manageRipple]
+  }
+  , "radio": {
+       js: ['MaterialRadio']
+     , html: ["mdl-radio", "mdl-js-radio"]
+     , fct: [manageRipple]
+  }
+  , "icon-toggle": {
+       js: ['MaterialIconToggle']
+     , html: ["mdl-icon-toggle", "mdl-js-icon-toggle"]
+     , fct: [manageRipple]
+  }
+  , "checkbox": {
        js: ['MaterialCheckbox']
      , html: ["mdl-checkbox", "mdl-js-checkbox"]
-     , fct: function(element){
-        manageRipple(element);
-        let elt = $(element).find("span.mdl-js-ripple-effect").get()[0];
-        if(elt) componentHandler.upgradeElement(elt, "MaterialRipple");
-     }
+     , fct: [manageRipple]
   }
+
 }
 
 function manageRipple(element){
   let classes = $(element).attr('class');
-  if(classes.split(' ').indexOf('mdl-js-ripple-effect') != -1){
-    componentHandler.upgradeElement(element, "MaterialRipple");
-  }
+  if(classes.split(' ').indexOf('mdl-js-ripple-effect') != -1) componentHandler.upgradeElement(element, "MaterialRipple");
+  let elts = $(element).find(".mdl-js-ripple-effect").get();
+  for(let elt of elts) componentHandler.upgradeElement(elt, "MaterialRipple");
 }
 
-function upgradeElement(element, type){
-  let {fct, html, js=[]} = mdlTypes[type];
 
-  for(let type of js){
-    componentHandler.upgradeElement(element, type);
-  }
+function upgradeElement(element, type){
+  let {fct=[], html, js=[]} = mdlTypes[type];
 
   if(html) $(element).addClass(html.join(' '));
 
-  if(fct) fct(element); 
+  for(let type of js) componentHandler.upgradeElement(element, type);
+
+  for(let f of fct) f(element); 
 }
 
 @inject(Element)
