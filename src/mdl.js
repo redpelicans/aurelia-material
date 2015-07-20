@@ -83,7 +83,7 @@ function manageRipple(element){
 
 
 function upgradeElement(element, type){
-  let {fct=[], html, js=[]} = mdlTypes[type];
+  let {fct=[], html, js=[]} = (mdlTypes[type] || {});
 
   if(html) $(element).addClass(html.join(' '));
 

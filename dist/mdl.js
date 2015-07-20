@@ -120,12 +120,13 @@ function manageRipple(element) {
 }
 
 function upgradeElement(element, type) {
-     var _mdlTypes$type = mdlTypes[type];
-     var _mdlTypes$type$fct = _mdlTypes$type.fct;
-     var fct = _mdlTypes$type$fct === undefined ? [] : _mdlTypes$type$fct;
-     var html = _mdlTypes$type.html;
-     var _mdlTypes$type$js = _mdlTypes$type.js;
-     var js = _mdlTypes$type$js === undefined ? [] : _mdlTypes$type$js;
+     var _ref = mdlTypes[type] || {};
+
+     var _ref$fct = _ref.fct;
+     var fct = _ref$fct === undefined ? [] : _ref$fct;
+     var html = _ref.html;
+     var _ref$js = _ref.js;
+     var js = _ref$js === undefined ? [] : _ref$js;
 
      if (html) (0, _jquery2['default'])(element).addClass(html.join(' '));
 
