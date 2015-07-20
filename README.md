@@ -1,6 +1,54 @@
 # aurelia-material
+
 Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
 
+
+[Material Design Lite](http://www.getmdl.io) has been designed for static html sites. To use it on dynamic ones, we have to register explictly new DOM elements (see [MDL](http://www.getmdl.io/started/index.html#dynamic)
+
+`Aurelia Material` will do that for you transparently while keeping MDL flexibility.
+
+See online [Demo](http://redpelicans.github.io/aurelia-material-sample/)
+
+### Principles
+
+We created the `CustomAttribute` `mdl` in charge of the registration of dynamic elements (all elements after index.html will be associated dynamically to the DOM with Aurelia)
+
+So instead of writing:
+
+```
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+```
+
+You will write in your views:
+
+```
+<button mdl="button" class="mdl-button--fab mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+```
+And that's all...
+
+`mdl` values are : 
+
+```
+[ 'button',
+  'textfield',
+  'layout',
+  'menu',
+  'data-table',
+  'tabs',
+  'slider',
+  'tooltip',
+  'progress',
+  'spinner',
+  'badge',
+  'switch',
+  'radio',
+  'icon-toggle',
+  'checkbox' ]
+```
 
 ### Install
 
