@@ -28,6 +28,7 @@ You will write in your views:
   <i class="material-icons">add</i>
 </button>
 ```
+
 And that's all...
 
 `mdl` values are : 
@@ -49,9 +50,10 @@ And that's all...
   'icon-toggle',
   'checkbox' ]
 ```
+Some MDL elements are not in the list because we don't have to register them, so we can use them as it.
+
 
 ### Install
-
 
 1. In your project install the plugin via `jspm` with following command
 
@@ -86,11 +88,8 @@ And that's all...
   ```html
       <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
 ```
-5. Use wrapped MDL components in your hml views:
+5. Use wrapped MDL components in your hml views as explained below.
 
-```html
-  <mdl-button/>
-```
 
 See online [Demo](http://redpelicans.github.io/aurelia-material-sample/)
   
