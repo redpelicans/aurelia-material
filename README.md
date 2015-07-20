@@ -3,7 +3,7 @@
 Aurelia wrapper for [Material Design Lite](http://www.getmdl.io).
 
 
-[Material Design Lite](http://www.getmdl.io) has been designed for static html sites. To use it on dynamic ones, we have to register explictly new DOM elements (see [MDL](http://www.getmdl.io/started/index.html#dynamic)
+[Material Design Lite](http://www.getmdl.io) has been designed for static html sites. To use it on dynamic ones, we have to register explictly new DOM elements (see [MDL](http://www.getmdl.io/started/index.html#dynamic))
 
 `Aurelia Material` will do that for you transparently while keeping MDL flexibility.
 
