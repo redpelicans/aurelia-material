@@ -37,11 +37,35 @@ var mdlTypes = {
           js: ['MaterialMenu'],
           html: ['mdl-menu', 'mdl-js-menu'],
           fct: [manageRipple]
-
+     },
+     'data-table': {
+          js: ['MaterialDataTable'],
+          html: ['mdl-data-table', 'mdl-js-data-table'],
+          fct: [manageRipple]
+     },
+     tabs: {
+          js: ['MaterialTabs'],
+          html: ['mdl-tabs', 'mdl-js-tabs'],
+          fct: [manageRipple]
      },
      slider: {
           js: ['MaterialSlider'],
           html: ['mdl-slider', 'mdl-js-slider']
+     },
+     tooltip: {
+          js: ['MaterialTooltip'],
+          html: ['mdl-tooltip']
+     },
+     progress: {
+          js: ['MaterialProgress'],
+          html: ['mdl-progress', 'mdl-js-progress']
+     },
+     spinner: {
+          js: ['MaterialSpinner'],
+          html: ['mdl-spinner', 'mdl-js-spinner']
+     },
+     badge: {
+          html: ['mdl-bagde']
      },
      'switch': {
           js: ['MaterialSwitch'],

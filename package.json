@@ -1,6 +1,6 @@
 {
   "name": "aurelia-material",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Aurelia wrapper for Material Design Lite",
   "main": "index.js",
   "keywords": [
