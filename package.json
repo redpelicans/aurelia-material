@@ -22,7 +22,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redpelicans/aurelia-material.git"
+    "url": "git+https://github.com/eric-swann-q2/aurelia-material.git"
   },
   "contributors": [
     "eric.basley@redpelicans.com",
@@ -30,14 +30,15 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/redpelicans/aurelia-material/issues"
+    "url": "https://github.com/eric-swann-q2/aurelia-material/issues"
   },
-  "homepage": "https://github.com/redpelicans/aurelia-material#readme",
+  "homepage": "https://github.com/eric-swann-q2/aurelia-material#readme",
   "jspm": {
     "directories": {
       "lib": "dist"
     },
     "dependencies": {
+      "eric-swann-q2/aurelia-material": "github:eric-swann-q2/aurelia-material@master",
       "google/material-design-lite": "github:google/material-design-lite@^1.0.0",
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0"
