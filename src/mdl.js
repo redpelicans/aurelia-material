@@ -85,7 +85,12 @@ function manageRipple(element){
 function upgradeElement(element, type){
   let {fct=[], html, js=[]} = (mdlTypes[type] || {});
 
-  if(html) element.classList.add(html);
+  if(html){
+    for(let i = 0;i < html.length;i++)
+    {
+        element.classList.add(html[i]);    
+    } 
+  } 
 
   for(let type of js) componentHandler.upgradeElement(element, type);
 
