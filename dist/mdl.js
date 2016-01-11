@@ -102,7 +102,7 @@ function upgradeElement(element, type) {
   var _ref$js = _ref.js;
   var js = _ref$js === undefined ? [] : _ref$js;
 
-  if (html) element.classList.add(html.join(' '));
+  if (html) element.classList.add(html);
 
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;
