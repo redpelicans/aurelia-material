@@ -16,15 +16,9 @@ System.config({
     "babel": "npm:babel-core@5.7.2",
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
-    "eric-swann-q2/aurelia-material": "github:eric-swann-q2/aurelia-material@master",
     "google/material-design-lite": "github:google/material-design-lite@1.0.6",
     "jquery": "github:components/jquery@2.1.4",
     "lodash": "npm:lodash@3.10.1",
-    "github:eric-swann-q2/aurelia-material@master": {
-      "google/material-design-lite": "github:google/material-design-lite@1.0.6",
-      "jquery": "github:components/jquery@2.1.4",
-      "lodash": "npm:lodash@3.10.1"
-    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
