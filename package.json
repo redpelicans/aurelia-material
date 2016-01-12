@@ -1,6 +1,6 @@
 {
   "name": "aurelia-material",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "Aurelia wrapper for Material Design Lite",
   "main": "index.js",
   "keywords": [
@@ -22,35 +22,30 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redpelicans/aurelia-material.git"
+    "url": "git+https://github.com/eric-swann-q2/aurelia-material.git"
   },
   "contributors": [
     "eric.basley@redpelicans.com",
-    "nicolas.briemant@redpelicans.com"
+    "nicolas.briemant@redpelicans.com",
+    "eric.swann@q2ebanking.com"
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/redpelicans/aurelia-material/issues"
+    "url": "https://github.com/eric-swann-q2/aurelia-material/issues"
   },
-  "homepage": "https://github.com/redpelicans/aurelia-material#readme",
+  "homepage": "https://github.com/eric-swann-q2/aurelia-material#readme",
   "jspm": {
     "directories": {
       "lib": "dist"
     },
     "dependencies": {
       "google/material-design-lite": "github:google/material-design-lite@^1.0.0",
-      "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
       "babel-runtime": "npm:babel-runtime@^5.1.13",
       "core-js": "npm:core-js@^0.9.4"
-    },
-    "overrides": {
-      "github:google/material-design-lite@1.0.0": {
-        "main": "./material.js"
-      }
     }
   }
 }
