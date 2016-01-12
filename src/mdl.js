@@ -48,7 +48,7 @@ let mdlTypes = {
      , html: ["mdl-spinner", "mdl-js-spinner"]
   }
   , badge: {
-     html: ["mdl-bagde"]
+     html: ["mdl-badge"]
   }
   , "switch": {
        js: ['MaterialSwitch']
@@ -70,31 +70,29 @@ let mdlTypes = {
      , html: ["mdl-checkbox", "mdl-js-checkbox"]
      , fct: [manageRipple]
   }
-
 }
 
 function manageRipple(element){
-  if(element.classList.contains("mdl-js-ripple-effect")) componentHandler.upgradeElement(element, "MaterialRipple");
-  let elts = element.getElementsByClassName(".mdl-js-ripple-effect");
-  for (let i = 0; i < elts.length; i++) {
-    let elt = elts[i];
-    componentHandler.upgradeElement(elt, "MaterialRipple");
-  }
+    let elts = element.getElementsByClassName(".mdl-js-ripple-effect");
+    for (let i = 0; i < elts.length; i++) {
+        let elt = elts[i];
+        componentHandler.upgradeElement(elt, "MaterialRipple");
+    }
 }
 
 function upgradeElement(element, type){
-  let {fct=[], html, js=[]} = (mdlTypes[type] || {});
+    let {fct=[], html, js=[]} = (mdlTypes[type] || {});
 
-  if(html){
+    if(html){
     for(let i = 0;i < html.length;i++)
     {
         element.classList.add(html[i]);    
     } 
-  } 
+    } 
 
-  for(let type of js) componentHandler.upgradeElement(element, type);
+    for(let type of js) componentHandler.upgradeElement(element, type);
 
-  for(let f of fct) f(element); 
+    for(let f of fct) f(element); 
 }
 
 @inject(Element)
