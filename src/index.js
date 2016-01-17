@@ -1,5 +1,5 @@
-export function configure(aurelia){
-  aurelia.globalResources('./mdl');
+export function configure(config){
+  config.aurelia.use.globalResources('./mdl');
 }
 
 
