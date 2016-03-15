@@ -20,80 +20,84 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 var mdlTypes = {
      button: {
-          html: ['mdl-button', 'mdl-js-button'],
+          html: ["mdl-button", "mdl-js-button"],
           js: ['MaterialButton'],
           fct: [manageRipple]
 
      },
      textfield: {
           js: ['MaterialTextfield'],
-          html: ['mdl-textfield', 'mdl-js-textfield']
+          html: ["mdl-textfield", "mdl-js-textfield"]
      },
      layout: {
           js: ['MaterialLayout'],
-          html: ['mdl-layout', 'mdl-js-layout']
+          html: ["mdl-layout", "mdl-js-layout"]
      },
      menu: {
           js: ['MaterialMenu'],
-          html: ['mdl-menu', 'mdl-js-menu'],
+          html: ["mdl-menu", "mdl-js-menu"],
           fct: [manageRipple]
      },
-     'data-table': {
+     "data-table": {
           js: ['MaterialDataTable'],
-          html: ['mdl-data-table', 'mdl-js-data-table'],
+          html: ["mdl-data-table", "mdl-js-data-table"],
           fct: [manageRipple]
      },
      tabs: {
           js: ['MaterialTabs'],
-          html: ['mdl-tabs', 'mdl-js-tabs'],
+          html: ["mdl-tabs", "mdl-js-tabs"],
           fct: [manageRipple]
      },
      slider: {
           js: ['MaterialSlider'],
-          html: ['mdl-slider', 'mdl-js-slider']
+          html: ["mdl-slider", "mdl-js-slider"]
      },
      tooltip: {
           js: ['MaterialTooltip'],
-          html: ['mdl-tooltip']
+          html: ["mdl-tooltip"]
      },
      progress: {
           js: ['MaterialProgress'],
-          html: ['mdl-progress', 'mdl-js-progress']
+          html: ["mdl-progress", "mdl-js-progress"]
      },
      spinner: {
           js: ['MaterialSpinner'],
-          html: ['mdl-spinner', 'mdl-js-spinner']
+          html: ["mdl-spinner", "mdl-js-spinner"]
      },
      badge: {
-          html: ['mdl-bagde']
+          html: ["mdl-bagde"]
      },
-     'switch': {
+     "switch": {
           js: ['MaterialSwitch'],
-          html: ['mdl-switch', 'mdl-js-switch'],
+          html: ["mdl-switch", "mdl-js-switch"],
           fct: [manageRipple]
      },
-     'radio': {
+     "radio": {
           js: ['MaterialRadio'],
-          html: ['mdl-radio', 'mdl-js-radio'],
+          html: ["mdl-radio", "mdl-js-radio"],
           fct: [manageRipple]
      },
-     'icon-toggle': {
+     "icon-toggle": {
           js: ['MaterialIconToggle'],
-          html: ['mdl-icon-toggle', 'mdl-js-icon-toggle'],
+          html: ["mdl-icon-toggle", "mdl-js-icon-toggle"],
           fct: [manageRipple]
      },
-     'checkbox': {
+     "checkbox": {
           js: ['MaterialCheckbox'],
-          html: ['mdl-checkbox', 'mdl-js-checkbox'],
+          html: ["mdl-checkbox", "mdl-js-checkbox"],
+          fct: [manageRipple]
+     },
+     "snackbar": {
+          js: ['MaterialSnackbar'],
+          html: ["mdl-js-snackbar", "mdl-snackbar"],
           fct: [manageRipple]
      }
-
 };
 
 function manageRipple(element) {
      var classes = (0, _jquery2['default'])(element).attr('class');
-     if (classes.split(' ').indexOf('mdl-js-ripple-effect') != -1) _googleMaterialDesignLite.componentHandler.upgradeElement(element, 'MaterialRipple');
-     var elts = (0, _jquery2['default'])(element).find('.mdl-js-ripple-effect').get();
+     if (classes.split(' ').indexOf('mdl-js-ripple-effect') != -1) _googleMaterialDesignLite.componentHandler.upgradeElement(element, "MaterialRipple");
+     var elts = (0, _jquery2['default'])(element).find(".mdl-js-ripple-effect").get();
      var _iteratorNormalCompletion = true;
      var _didIteratorError = false;
      var _iteratorError = undefined;
@@ -101,7 +105,7 @@ function manageRipple(element) {
      try {
           for (var _iterator = elts[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                var elt = _step.value;
-               _googleMaterialDesignLite.componentHandler.upgradeElement(elt, 'MaterialRipple');
+               _googleMaterialDesignLite.componentHandler.upgradeElement(elt, "MaterialRipple");
           }
      } catch (err) {
           _didIteratorError = true;
