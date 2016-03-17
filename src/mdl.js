@@ -71,6 +71,10 @@ let mdlTypes = {
      , html: ["mdl-checkbox", "mdl-js-checkbox"]
      , fct: [manageRipple]
   }
+  , "snackbar": {
+       js: ['MaterialSnackbar']
+     , html: ["mdl-snackbar", "mdl-js-snackbar"]
+  }
 
 }
 

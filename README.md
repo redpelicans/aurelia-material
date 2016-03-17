@@ -48,7 +48,8 @@ And that's all...
   'switch',
   'radio',
   'icon-toggle',
-  'checkbox' ]
+  'checkbox',
+  'snackbar' ]
 ```
 Some MDL elements are not in the list because we don't have to register them, so we can use them as it.
 
