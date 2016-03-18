@@ -8,7 +8,7 @@
     "material design lite"
   ],
   "dependencies": {
-    "del": "^1.2.0",
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.1.0",
     "gulp-changed": "^1.2.1",
@@ -16,7 +16,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "material-design-lite": "^1.0.0-3",
     "run-sequence": "^1.1.1",
-    "vinyl-paths": "^1.0.0"
+    "vinyl-paths": "^2.1.0"
   },
   "devDependencies": {},
   "scripts": {},
