@@ -17,14 +17,8 @@ var paths = {
 
 // need this options to use decorators
 var compilerOptions = {
-  stage: 0,
-  optional: [
-    "es7.decorators",
-    "regenerator",
-    "asyncToGenerator",
-    "es7.classProperties",
-    "es7.asyncFunctions"
-  ]
+  presets: ['es2015', 'stage-1'],
+  plugins: ['transform-decorators-legacy']
 };
 
 
