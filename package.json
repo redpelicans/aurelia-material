@@ -39,7 +39,6 @@
     },
     "dependencies": {
       "google/material-design-lite": "github:google/material-design-lite@^1.0.0",
-      "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.0"
     },
     "devDependencies": {

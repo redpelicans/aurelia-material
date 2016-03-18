@@ -6,17 +6,13 @@ Object.defineProperty(exports, '__esModule', {
 
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 var _aureliaFramework = require('aurelia-framework');
 
 var _googleMaterialDesignLite = require('google/material-design-lite');
-
-var _jquery = require('jquery');
-
-var _jquery2 = _interopRequireDefault(_jquery);
 
 var mdlTypes = {
      button: {
@@ -95,9 +91,9 @@ var mdlTypes = {
 };
 
 function manageRipple(element) {
-     var classes = (0, _jquery2['default'])(element).attr('class');
+     var classes = element.getAttribute('class');
      if (classes.split(' ').indexOf('mdl-js-ripple-effect') != -1) _googleMaterialDesignLite.componentHandler.upgradeElement(element, 'MaterialRipple');
-     var elts = (0, _jquery2['default'])(element).find('.mdl-js-ripple-effect').get();
+     var elts = element.querySelectorAll('.mdl-js-ripple-effect');
      var _iteratorNormalCompletion = true;
      var _didIteratorError = false;
      var _iteratorError = undefined;
@@ -123,6 +119,12 @@ function manageRipple(element) {
      }
 }
 
+function addClass(element, className) {
+     var _element$classList;
+
+     if (element.classList) (_element$classList = element.classList).add.apply(_element$classList, _toConsumableArray(className));else element.className += ' ' + className.join(' ');
+}
+
 function upgradeElement(element, type) {
      var _ref = mdlTypes[type] || {};
 
@@ -132,7 +134,7 @@ function upgradeElement(element, type) {
      var _ref$js = _ref.js;
      var js = _ref$js === undefined ? [] : _ref$js;
 
-     if (html) (0, _jquery2['default'])(element).addClass(html.join(' '));
+     if (html) addClass(element, html);
 
      var _iteratorNormalCompletion2 = true;
      var _didIteratorError2 = false;
