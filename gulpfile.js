@@ -9,7 +9,6 @@ var runSequence = require('run-sequence');
 var path = require('path');
 var paths = {
     source:'src/**/*.js'
-  , html:'src/**/*.html'
   , dist: 'dist'
   , sourceRoot: path.join(__dirname, 'src'),
 }
@@ -38,17 +37,12 @@ gulp.task('build-client', function () {
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('build-html', function () {
-  return gulp.src(paths.html)
-    .pipe(changed(paths.dist, {extension: '.html'}))
-    .pipe(gulp.dest(paths.dist));
-});
 
 
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-client', 'build-html'],
+    'build-client',
     callback
   );
 });
