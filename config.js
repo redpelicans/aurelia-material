@@ -1,24 +1,22 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "/",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "babel": "npm:babel-core@5.7.2",
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
-    "google/material-design-lite": "github:google/material-design-lite@1.0.0",
+    "google/material-design-lite": "github:google/material-design-lite@1.1.3",
     "jquery": "github:components/jquery@2.1.4",
     "lodash": "npm:lodash@3.10.0",
     "github:jspm/nodelibs-process@0.1.1": {
@@ -37,4 +35,3 @@ System.config({
     }
   }
 });
-
